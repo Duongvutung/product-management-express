@@ -1,0 +1,126 @@
+extends ../../layouts/default.pug
+include ../../mixins/FilterStatus.pug
+include ../../mixins/Search.pug 
+include ../../mixins/Pagination.pug
+include ../../mixins/FormChangeMulti.pug
+include ../../mixins/Alert.pug
+block main
+  +Alert(5000)
+
+  h1 Danh sách sản phẩm
+  
+  .card.mb-3
+    .card-header Bộ lọc và Tìm kiếm
+    .card-body
+      .row
+        .col-6
+          +FilterStatus(filterStatus)
+        .col-6 
+          +Search(keyword)
+
+  .card
+    .card-header Danh sách sản phẩm
+      .card-body
+        .row
+          .col-8
+            +FormChangeMulti(`${prefixAdmin}/product/change-multi?_method=PATCH`)
+          .col-4 
+            a(
+              href=`${prefixAdmin}/products/create`
+              class="btn btn-outline-success"
+            ) + Thêm mới sản phẩm
+      
+
+      table.table.table-hover.table-sm(checkbox-multi)
+        thead.table-light
+          tr
+            th
+              input(type="checkbox" name="checkall")
+            th STT
+            th Title
+            th Images
+            th Price
+            th Discount (%)
+            th Final Price
+            th Position 
+            th Status
+            th Action
+        tbody
+          each product, index in products
+            tr 
+              td
+                input(
+                  type="checkbox"
+                  name="id"
+                  value=product._id
+                )
+              td #{index + 1}
+              td #{product.title}
+              td
+                img(src=product.thumbnail, alt=product.title, width="100", class="img-thumbnail")
+              td #{product.price}
+              td #{product.discountPercentage} %
+              td #{(product.price - (product.price * product.discountPercentage / 100)).toFixed(2)}
+              td
+                input(
+                  value = product.position
+                  type = "number",
+                  style = "width:60px",
+                  min="1",
+                  name="position"
+                )
+              td
+                if product.status == "active"
+                  a(
+                    href="javascript:;"
+                    data-status=product.status
+                    button-change-status
+                    data-id=product._id
+                    class="badge bg-success"
+                  ) Hoạt động
+                else  
+                  a(
+                    href="javascript:;"
+                    data-status=product.status
+                    button-change-status
+                    data-id=product._id
+                    class="badge bg-danger"
+                  ) Dừng hoạt động
+              td 
+                button(
+                  class="btn btn-warning btn-sm"
+                ) Sửa
+                button(
+                  class="btn btn-danger btn-sm ml-1"
+                  data-id=product._id
+                  button-delete
+                ) Xoá
+              td 
+                button(
+                  class="btn btn-success btn-sm ml-1"
+                  data-id=product._id
+                  button-restore
+                ) Khôi phục
+
+
+
+  +Pagination(pagination)
+    
+  // form ẩn dùng để submit khi đổi trạng thái
+  form(
+    action=""
+    method="POST"
+    id="form-change-status"
+    data-path=`${prefixAdmin}/product/change-status`
+  )
+
+  form(
+    action=""
+    method="POST"
+    id="form-deleted-item"
+    data-path=`${prefixAdmin}/product/deleted`
+  )
+
+  script(src="/admin/js-frontend/script.js")
+  script(src="/admin/js-frontend/product.js") 
+  

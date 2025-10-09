@@ -1,0 +1,112 @@
+/* Reset CSS cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #222; /* nền đen */
+  color: white;
+  display: flex;
+  justify-content: space-between; /* logo trái, menu phải */
+  align-items: center;
+  padding: 10px 40px; /* cách lề trong */
+}
+
+/* Logo*/
+header img {
+  width: 100px;
+  height: auto;
+}
+
+/* Navigation */
+.Header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;  /* 👈 Các mục sẽ trải đều */
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%; /* 👈 Quan trọng để nó chiếm hết chiều ngang */
+}
+
+.Header nav ul li {
+  flex: 1; /* 👈 mỗi item chiếm đều không gian */
+  text-align: center;
+}
+
+.Header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: 10px 0;
+  transition: color 0.3s;
+}
+
+.Header ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.Header nav ul li a:hover {
+  color: #ff9800;
+}
+
+/* Main content */
+main {
+  padding: 30px;
+  text-align: center;
+}
+
+main h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Product section */
+.product {
+  display: inline-block;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}

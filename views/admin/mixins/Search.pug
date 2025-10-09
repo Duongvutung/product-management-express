@@ -1,0 +1,10 @@
+mixin Search(keyword)
+    form#form-search(method="get")
+        .input-group
+            input.form-control(
+                type="text",
+                name="keyword",
+                placeholder="Enter your key",
+                value=keyword
+            )
+            button.btn.btn-success(type="submit") Search
