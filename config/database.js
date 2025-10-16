@@ -1,14 +1,13 @@
 const mongoose = require('mongoose');
-require('dotenv').config();  // Load file .env
+require('dotenv').config();  // Đọc file .env
 
 module.exports.connect = async () => {
-    try {
-        await mongoose.connect(process.env.DATABASE_URL, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-        });
-        console.log('✅ Connect to database successfully');
-    } catch (error) {
-        console.error('❌ Connect to database failed', error);
-    }
+  try {
+    // Chỉ cần truyền mỗi URI thôi, Mongoose 7 tự xử lý
+    await mongoose.connect(process.env.DATABASE_URL);
+
+    console.log('✅ Connect to MongoDB successfully');
+  } catch (error) {
+    console.error('❌ Connect to MongoDB failed:', error.message);
+  }
 };

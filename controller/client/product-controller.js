@@ -27,3 +27,22 @@ module.exports.index = async (req, res) => {
     }
 };
 
+// [GET] /products/:slug
+module.exports.detail = async (req, res) => {
+  try {
+    const product = await Product.findOne({ 
+      slug: req.params.slug, 
+      deleted: false,
+      status: "active"
+    });
+
+    res.render("client/pages/products/detail", {
+      pageTitle: product.title,
+      product: product
+    });
+  } catch (error) {
+    req.flash("error", "Không tìm thấy sản phẩm!");
+    res.redirect(`/products`);
+  }
+};
+// End /products/:slug

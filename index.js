@@ -8,6 +8,7 @@ const dotenv = require('dotenv');
 const db = require('./config/database');
 const systemConfig = require('./config/system');
 
+
 // Khởi tạo app
 const app = express();
 
@@ -15,14 +16,14 @@ const app = express();
 dotenv.config();
 
 // Cấu hình view engine (Pug)
-app.set('views', './views');
+app.set('views', `${__dirname}/views`);
 app.set('view engine', 'pug');
 
 // Kết nối database
 db.connect();
 
 // Middleware tĩnh cho file public
-app.use(express.static('public'));
+app.use(express.static(`${__dirname}/public`));
 
 // ------------------- MIDDLEWARE CƠ BẢN ------------------- //
 
@@ -33,6 +34,8 @@ app.use(session({
   resave: false,
   saveUninitialized: true
 }));
+
+//Cloud.mongodb
 
 // Flash message (phải sau session)
 app.use(flash());
@@ -57,8 +60,15 @@ routeAdmin(app);
 routeClient(app);
 // -------------------------------------------------------- //
 
-// Lắng nghe cổng
 const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`✅ Server is running on port ${port}`);
-});
+
+// Nếu đang chạy cục bộ (local) thì dùng app.listen
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(port, () => {
+    console.log(`✅ Server is running locally on port ${port}`);
+  });
+}
+
+// Khi deploy lên Vercel, export app thay vì listen
+module.exports = app;
+

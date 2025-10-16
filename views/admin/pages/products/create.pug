@@ -1,12 +1,14 @@
 extends ../../layouts/default.pug
-
+include ../../mixins/Alert.pug
 block main 
+    +Alert-error(5000)
     h1(class="mb-4") Thêm mới sản phẩm
 
     //- Form thêm sản phẩm
     form(
         action=`${prefixAdmin}/products/create`
         method="POST" 
+        enctype="multipart/form-data"
         id = "form-create-products"
     )
       div(class="form-group")
@@ -29,10 +31,11 @@ block main
         label(for="stock") Số lượng 
         input(type="number" class="form-control" id="stock" name="stock" value="0" min="0")
 
-      div(class="form-group")
+      div(class="form-group" upload-image)
         label(for="thumbnail") Ảnh
-        input(type="file" class="form-control-file" id="thumbnail" name="thumbnail" accept="image/*")
-
+        input(type="file" class="form-control-file" id="thumbnail" name="thumbnail" accept="image/*" upload-image-input)
+        img(src="" upload-image-preview class="image-preview")
+        button() x
       div(class="form-group")
         label(for="position") Vị trí
         input(type="number" class="form-control" id="position" name="position" placeholder="Tự động tăng" min="1")

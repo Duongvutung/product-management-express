@@ -1,0 +1,44 @@
+extends ../../layouts/default.pug
+
+block main 
+  h1(class="mb-4") Chi tiết sản phẩm
+
+  if product
+    .product-detail
+      if product.title
+        div
+          strong Tên sản phẩm: 
+          | #{product.title}
+
+      if product.description
+        div
+          strong Mô tả: 
+          | #{product.description}
+
+      if product.price
+        div
+          strong Giá: 
+          | #{product.price} VNĐ
+
+      if product.discountPercentage
+        div
+          strong Giảm giá: 
+          | #{product.discountPercentage}%
+
+      if product.quantity
+        div
+          strong Số lượng: 
+          | #{product.quantity}
+
+      if product.thumbnail
+        div
+          strong Ảnh sản phẩm:
+          br
+          img(src=`/uploads/${product.thumbnail}` alt="Ảnh sản phẩm" width="200" class="mt-2 rounded shadow")
+      a(
+        href=`${prefixAdmin}/products/edit/${product.id}`
+        class="btn btn-warning btn-sm"
+      ) Sửa
+
+  else 
+    div.alert.alert-warning Không tìm thấy sản phẩm.

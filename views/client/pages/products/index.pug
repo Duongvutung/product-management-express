@@ -14,6 +14,10 @@ block main
                         .inner-image 
                             img(src=item.thumnail, alt= item.title) 
                         .inner-content 
-                            h3.inner-title #{item.title}   
-                            p.inner-price #{item.price} VND
+                            h3.inner-title 
+                                a(href=`/products/${item.slug}`) #{item.title}  
+                            .inner-price-new #{item.Newprice} VND
+                            .inner-price-old #{item.Oldprice} VND 
+                            .inner-discount -#{item.discountPercentage} %
+
             

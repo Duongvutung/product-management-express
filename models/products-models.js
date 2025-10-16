@@ -18,7 +18,7 @@ const productSchema = new mongoose.Schema(
             unique: true
         },
         deleted: { type: Boolean, default: false },
-        deletedAt: {type:Date, required:true}
+        deletedAt: {type:Date, default: null}
     },
     { timestamps: true } // lưu createdAt, updatedAt
 );

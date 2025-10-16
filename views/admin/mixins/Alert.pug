@@ -1,6 +1,13 @@
-mixin Alert(time)
+mixin Alert-success(time)
   if messages && messages.success
     .message.info
       div.alert.alert-success(show-alert data-time=time)
         | #{messages.success}
+        span(close-alert) 
+
+mixin Alert-error(time)
+  if messages && messages.error
+    .message.info
+      div.alert.alert-success(show-alert data-time=time)
+        | #{messages.error}
         span(close-alert) 

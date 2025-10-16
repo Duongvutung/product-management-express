@@ -5,7 +5,7 @@ include ../../mixins/Pagination.pug
 include ../../mixins/FormChangeMulti.pug
 include ../../mixins/Alert.pug
 block main
-  +Alert(5000)
+  +Alert-success(5000)
 
   h1 Danh sách sản phẩm
   
@@ -23,7 +23,7 @@ block main
       .card-body
         .row
           .col-8
-            +FormChangeMulti(`${prefixAdmin}/product/change-multi?_method=PATCH`)
+            +FormChangeMulti(`${prefixAdmin}/products/change-multi?_method=PATCH`)
           .col-4 
             a(
               href=`${prefixAdmin}/products/create`
@@ -87,7 +87,8 @@ block main
                     class="badge bg-danger"
                   ) Dừng hoạt động
               td 
-                button(
+                a(
+                  href=`${prefixAdmin}/products/edit/${product.id}`
                   class="btn btn-warning btn-sm"
                 ) Sửa
                 button(
@@ -95,6 +96,10 @@ block main
                   data-id=product._id
                   button-delete
                 ) Xoá
+                a(
+                  href=`${prefixAdmin}/products/detail/${product.id}`
+                  class="btn btn-success btn-sm"
+                ) Xem chi tiết
               td 
                 button(
                   class="btn btn-success btn-sm ml-1"
@@ -111,14 +116,14 @@ block main
     action=""
     method="POST"
     id="form-change-status"
-    data-path=`${prefixAdmin}/product/change-status`
+    data-path=`${prefixAdmin}/products/change-status`
   )
 
   form(
     action=""
     method="POST"
     id="form-deleted-item"
-    data-path=`${prefixAdmin}/product/deleted`
+    data-path=`${prefixAdmin}/products/deleted`
   )
 
   script(src="/admin/js-frontend/script.js")

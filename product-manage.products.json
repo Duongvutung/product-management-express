@@ -1,0 +1,518 @@
+[{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a81"
+  },
+  "title": "Áo Thun Cotton Cơ Bản Nam",
+  "description": "Áo thun 100% cotton, cổ tròn, thoáng mát, phong cách cơ bản dễ phối đồ.",
+  "price": 250000,
+  "discountPercentage": 10.5,
+  "stock": 150,
+  "thumbnail": "/images/product/tshirt_basic_men.jpg",
+  "status": "active",
+  "position": 1,
+  "deleted": false,
+  "updatedAt": {
+    "$date": "2025-10-12T10:19:39.189Z"
+  },
+  "deletedAt": {
+    "$date": "2025-10-05T04:04:37.958Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a82"
+  },
+  "title": "Quần Jeans Slim Fit Nữ",
+  "description": "Quần jeans co giãn nhẹ, ôm vừa vặn, màu xanh denim cổ điển.",
+  "price": 499000,
+  "discountPercentage": 5,
+  "stock": 85,
+  "thumbnail": "/images/product/jeans_slim_women.jpg",
+  "status": "active",
+  "position": 2,
+  "deleted": false,
+  "updatedAt": {
+    "$date": "2025-10-12T10:19:39.189Z"
+  },
+  "deletedAt": {
+    "$date": "2025-10-05T04:12:06.518Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a83"
+  },
+  "title": "Giày Thể Thao Chạy Bộ A-10",
+  "description": "Giày chạy bộ chuyên nghiệp, đế đệm khí, siêu nhẹ và thoáng khí.",
+  "price": 1250000,
+  "discountPercentage": 15,
+  "stock": 45,
+  "thumbnail": "/images/product/running_shoes_a10.jpg",
+  "status": "active",
+  "position": 3,
+  "deleted": false,
+  "updatedAt": {
+    "$date": "2025-10-12T10:19:39.189Z"
+  },
+  "deletedAt": {
+    "$date": "2025-10-05T04:21:12.053Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a84"
+  },
+  "title": "Laptop UltraBook X15 (Core i7)",
+  "description": "Mẫu laptop mỏng nhẹ, hiệu năng cao, màn hình 15 inch 4K, RAM 16GB.",
+  "price": 28990000,
+  "discountPercentage": 0,
+  "stock": 20,
+  "thumbnail": "/images/product/ultrabook_x15.jpg",
+  "status": "active",
+  "position": 4,
+  "deleted": false,
+  "updatedAt": {
+    "$date": "2025-10-12T10:19:39.189Z"
+  },
+  "deletedAt": {
+    "$date": "2025-10-05T04:21:15.702Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a85"
+  },
+  "title": "Điện Thoại SmartPhone P30 Pro",
+  "description": "Điện thoại thông minh camera 50MP, pin 5000mAh, bộ nhớ 256GB.",
+  "price": 18500000,
+  "discountPercentage": 8.8,
+  "stock": 60,
+  "thumbnail": "/images/product/smartphone_p30_pro.jpg",
+  "status": "active",
+  "position": 5,
+  "deleted": false,
+  "updatedAt": {
+    "$date": "2025-10-12T10:19:39.189Z"
+  },
+  "deletedAt": {
+    "$date": "2025-10-05T04:21:26.373Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a86"
+  },
+  "title": "Tai Nghe Không Dây Bluetooth 5.0",
+  "description": "Tai nghe nhét tai chống ồn, thời lượng pin 8 giờ, âm thanh HD.",
+  "price": 850000,
+  "discountPercentage": 12,
+  "stock": 300,
+  "thumbnail": "/images/product/wireless_earbuds.jpg",
+  "status": "active",
+  "position": 6,
+  "deleted": false,
+  "updatedAt": {
+    "$date": "2025-10-12T10:19:39.189Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a87"
+  },
+  "title": "Nồi Chiên Không Dầu Dung Tích Lớn",
+  "description": "Nồi chiên không dầu 5.5L, công nghệ Air Fry, màn hình cảm ứng.",
+  "price": 1590000,
+  "discountPercentage": 20,
+  "stock": 75,
+  "thumbnail": "/images/product/air_fryer_large.jpg",
+  "status": "active",
+  "position": 7,
+  "deleted": false,
+  "updatedAt": {
+    "$date": "2025-10-12T10:19:39.189Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a88"
+  },
+  "title": "Ghế Văn Phòng Công Thái Học",
+  "description": "Ghế lưới thoáng khí, hỗ trợ lưng và cổ, điều chỉnh độ cao và góc nghiêng.",
+  "price": 2999000,
+  "discountPercentage": 0,
+  "stock": 35,
+  "thumbnail": "/images/product/ergonomic_chair.jpg",
+  "status": "active",
+  "position": 8,
+  "deleted": false,
+  "updatedAt": {
+    "$date": "2025-10-12T10:19:39.189Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a89"
+  },
+  "title": "Kem Dưỡng Ẩm Chống Lão Hóa 50ml",
+  "description": "Kem dưỡng ẩm ban đêm, chiết xuất từ thiên nhiên, giúp da căng mịn.",
+  "price": 620000,
+  "discountPercentage": 9.5,
+  "stock": 120,
+  "thumbnail": "/images/product/anti_aging_cream.jpg",
+  "status": "active",
+  "position": 9,
+  "deleted": true,
+  "updatedAt": {
+    "$date": "2025-10-06T15:52:39.821Z"
+  },
+  "deletedAt": {
+    "$date": "2025-10-06T15:52:39.819Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a8a"
+  },
+  "title": "Bàn Phím Cơ Gaming RGB",
+  "description": "Bàn phím cơ full-size, switch Blue, đèn nền RGB 16 triệu màu, chống nước.",
+  "price": 1150000,
+  "discountPercentage": 10,
+  "stock": 90,
+  "thumbnail": "/images/product/mechanical_keyboard.jpg",
+  "status": "active",
+  "position": 10,
+  "deleted": true,
+  "updatedAt": {
+    "$date": "2025-10-12T13:45:01.984Z"
+  },
+  "deletedAt": {
+    "$date": "2025-10-12T13:45:01.983Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a8b"
+  },
+  "title": "Đèn Bàn LED Cảm Ứng",
+  "description": "Đèn bàn học chống cận, 3 chế độ ánh sáng, điều chỉnh độ sáng bằng cảm ứng.",
+  "price": 350000,
+  "discountPercentage": 15,
+  "stock": 200,
+  "thumbnail": "/images/product/led_desk_lamp.jpg",
+  "status": "active",
+  "position": 11,
+  "deleted": false,
+  "updatedAt": {
+    "$date": "2025-10-12T10:19:39.189Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a8c"
+  },
+  "title": "Máy Hút Bụi Không Dây Model V8",
+  "description": "Máy hút bụi cầm tay, lực hút mạnh mẽ, pin sạc nhanh, nhẹ và dễ sử dụng.",
+  "price": 3800000,
+  "discountPercentage": 10,
+  "stock": 40,
+  "thumbnail": "/images/product/cordless_vacuum_v8.jpg",
+  "status": "active",
+  "position": 12,
+  "deleted": false,
+  "updatedAt": {
+    "$date": "2025-10-12T13:45:13.192Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a8d"
+  },
+  "title": "Bộ Chăn Ga Gối Cotton Cao Cấp (King Size)",
+  "description": "Bộ chăn ga gối 100% Cotton Ai Cập, mềm mại, thấm hút tốt, họa tiết trơn.",
+  "price": 2500000,
+  "discountPercentage": 18,
+  "stock": 55,
+  "thumbnail": "/images/product/bedding_set_king.jpg",
+  "status": "active",
+  "position": 13,
+  "deleted": false,
+  "updatedAt": {
+    "$date": "2025-10-12T13:30:55.385Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a8e"
+  },
+  "title": "Kính Mát Thời Trang UV400",
+  "description": "Kính râm gọng kim loại, tròng phân cực, chống tia UV400, unisex.",
+  "price": 450000,
+  "discountPercentage": 5,
+  "stock": 180,
+  "thumbnail": "/images/product/sunglasses_uv400.jpg",
+  "status": "active",
+  "position": 14,
+  "deleted": false
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a8f"
+  },
+  "title": "Balo Laptop Chống Nước 15.6 inch",
+  "description": "Balo đa năng, chống sốc, chống nước, nhiều ngăn tiện lợi, phù hợp cho đi làm và du lịch.",
+  "price": 680000,
+  "discountPercentage": 10,
+  "stock": 95,
+  "thumbnail": "/images/product/waterproof_backpack.jpg",
+  "status": "active",
+  "position": 15,
+  "deleted": false
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a90"
+  },
+  "title": "Đồng Hồ Thông Minh Series S8",
+  "description": "Đồng hồ đo nhịp tim, oxy máu, GPS, màn hình AMOLED 1.7 inch.",
+  "price": 5500000,
+  "discountPercentage": 11.5,
+  "stock": 30,
+  "thumbnail": "/images/product/smartwatch_s8.jpg",
+  "status": "active",
+  "position": 16,
+  "deleted": false,
+  "updatedAt": {
+    "$date": "2025-10-12T10:31:36.184Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a91"
+  },
+  "title": "Máy Ảnh Kỹ Thuật Số DSLR D-500",
+  "description": "Máy ảnh chuyên nghiệp 24MP, quay video 4K, kèm lens kit 18-55mm.",
+  "price": 19990000,
+  "discountPercentage": 0,
+  "stock": 15,
+  "thumbnail": "/images/product/dslr_camera_d500.jpg",
+  "status": "active",
+  "position": 17,
+  "deleted": false,
+  "updatedAt": {
+    "$date": "2025-10-12T03:05:24.307Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a92"
+  },
+  "title": "Bộ Dụng Cụ Sửa Chữa Đa Năng 45 món",
+  "description": "Hộp đựng tiện lợi, đầy đủ các loại tua vít, kìm, búa cần thiết cho gia đình.",
+  "price": 750000,
+  "discountPercentage": 25,
+  "stock": 70,
+  "thumbnail": "/images/product/tool_kit_45pcs.jpg",
+  "status": "active",
+  "position": 18,
+  "deleted": false
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a93"
+  },
+  "title": "Tủ Quần Áo Gỗ Công Nghiệp 3 Cánh",
+  "description": "Tủ quần áo hiện đại, chất liệu gỗ công nghiệp chống ẩm, kích thước 120x200cm.",
+  "price": 4200000,
+  "discountPercentage": 5,
+  "stock": 12,
+  "thumbnail": "/images/product/wardrobe_3_doors.jpg",
+  "status": "active",
+  "position": 19,
+  "deleted": false
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a94"
+  },
+  "title": "Áo Khoác Da Nam Cao Cấp",
+  "description": "Áo khoác da PU mềm mại, lót lông giữ ấm, phong cách biker cá tính.",
+  "price": 950000,
+  "discountPercentage": 10,
+  "stock": 65,
+  "thumbnail": "/images/product/leather_jacket_men.jpg",
+  "status": "active",
+  "position": 20,
+  "deleted": false
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a95"
+  },
+  "title": "Bộ Mỹ Phẩm Trang Điểm Cơ Bản",
+  "description": "Bộ sản phẩm gồm kem nền, phấn phủ, mascara, son môi, phù hợp trang điểm hàng ngày.",
+  "price": 1300000,
+  "discountPercentage": 15,
+  "stock": 50,
+  "thumbnail": "/images/product/makeup_set_basic.jpg",
+  "status": "inactive",
+  "position": 21,
+  "deleted": false,
+  "updatedAt": {
+    "$date": "2025-10-01T15:35:17.416Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a96"
+  },
+  "title": "Máy Lọc Nước RO 9 Cấp Lọc",
+  "description": "Máy lọc nước công nghệ RO, bổ sung khoáng chất, công suất lọc 15L/h.",
+  "price": 6700000,
+  "discountPercentage": 0,
+  "stock": 25,
+  "thumbnail": "/images/product/ro_water_purifier.jpg",
+  "status": "inactive",
+  "position": 22,
+  "deleted": false,
+  "updatedAt": {
+    "$date": "2025-10-01T15:35:20.958Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a97"
+  },
+  "title": "Dép Sandal Nữ Đế Bệt Quai Chéo",
+  "description": "Dép sandal thời trang, chất liệu da tổng hợp, đế cao su chống trơn trượt.",
+  "price": 290000,
+  "discountPercentage": 20.7,
+  "stock": 110,
+  "thumbnail": "/images/product/sandal_flat_women.jpg",
+  "status": "active",
+  "position": 23,
+  "deleted": false
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a98"
+  },
+  "title": "Bút Cảm Ứng Stylus Pro",
+  "description": "Bút cảm ứng độ nhạy cao, tương thích với mọi máy tính bảng và điện thoại thông minh.",
+  "price": 550000,
+  "discountPercentage": 10,
+  "stock": 140,
+  "thumbnail": "/images/product/stylus_pen_pro.jpg",
+  "status": "active",
+  "position": 24,
+  "deleted": false
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a99"
+  },
+  "title": "Tivi LED 4K 55 inch Smart",
+  "description": "Smart TV 4K UHD, màn hình không viền, tích hợp trợ lý giọng nói.",
+  "price": 10500000,
+  "discountPercentage": 10,
+  "stock": 18,
+  "thumbnail": "/images/product/smart_tv_55inch.jpg",
+  "status": "active",
+  "position": 25,
+  "deleted": false
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a9a"
+  },
+  "title": "Sách 'Bí Mật Tư Duy Triệu Phú'",
+  "description": "Sách về phát triển bản thân và tư duy tài chính, bán chạy nhất.",
+  "price": 120000,
+  "discountPercentage": 0,
+  "stock": 500,
+  "thumbnail": "/images/product/book_millionaire_mind.jpg",
+  "status": "active",
+  "position": 26,
+  "deleted": false
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a9b"
+  },
+  "title": "Đồ Chơi Lắp Ráp Robot STEM 500 chi tiết",
+  "description": "Bộ đồ chơi lắp ráp giáo dục, giúp phát triển tư duy logic và kỹ năng giải quyết vấn đề.",
+  "price": 899000,
+  "discountPercentage": 15,
+  "stock": 80,
+  "thumbnail": "/images/product/stem_robot_kit.jpg",
+  "status": "active",
+  "position": 27,
+  "deleted": false
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a9c"
+  },
+  "title": "Máy Pha Cà Phê Tự Động",
+  "description": "Máy pha cà phê hạt và bột, tích hợp cối xay, pha được Espresso và Cappuccino.",
+  "price": 7500000,
+  "discountPercentage": 5.5,
+  "stock": 22,
+  "thumbnail": "/images/product/automatic_coffee_maker.jpg",
+  "status": "active",
+  "position": 28,
+  "deleted": false
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a9d"
+  },
+  "title": "Váy Maxi Hoa Nhí Cổ Điển",
+  "description": "Váy dài maxi chất liệu voan nhẹ, họa tiết hoa nhí, eo thun co giãn.",
+  "price": 580000,
+  "discountPercentage": 10,
+  "stock": 70,
+  "thumbnail": "/images/product/maxi_floral_dress.jpg",
+  "status": "active",
+  "position": 29,
+  "deleted": false,
+  "updatedAt": {
+    "$date": "2025-10-01T15:35:23.932Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d9403d5ed487012e683a9e"
+  },
+  "title": "Thảm Yoga TPE Chống Trượt 6mm",
+  "description": "Thảm tập yoga chất liệu TPE thân thiện môi trường, độ dày 6mm, chống trượt tuyệt đối.",
+  "price": 400000,
+  "discountPercentage": 10,
+  "stock": 130,
+  "thumbnail": "/images/product/tpe_yoga_mat.jpg",
+  "status": "inactive",
+  "position": 30,
+  "deleted": false
+},
+{
+  "_id": {
+    "$oid": "68eb837840fb27a48eee97dd"
+  },
+  "title": "San pham 1",
+  "description": "pk",
+  "price": 100,
+  "discountPercentage": 10,
+  "stock": 1,
+  "thumbnail": "uploads/thumbnail-1760265080312-525628554.png",
+  "status": "active",
+  "position": 10,
+  "deleted": false,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2025-10-12T10:31:20.343Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-12T10:31:20.343Z"
+  },
+  "slug": "san-pham-1",
+  "__v": 0
+}]
